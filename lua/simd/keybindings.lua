@@ -46,7 +46,7 @@ function M.preview_glow(split_vertical)
 end
 
 -- Keybindings
-vim.keymap.set('n', '<leader>nt', M.toggle_checkbox, { desc = "Toggle markdown checkbox in line" })
+vim.keymap.set('n', '<leader>nc', M.toggle_checkbox, { desc = "Toggle markdown checkbox in line" })
 vim.keymap.set('n', '<leader>np', function() M.preview_glow(true) end,
   { desc = "Preview markdown with glow in hsplit" })
 vim.keymap.set('n', '<leader>nl', function() M.preview_glow(false) end,
