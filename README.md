@@ -4,6 +4,10 @@ A Neovim plugin which adds some functionality for simple note taking. Primarily 
 
 ## Features
 
+### Small header
+
+#### Smaller header
+
 Quickly add/toggle Tick/Cross marks in checklists.
 
 - [ ] Unchecked item
