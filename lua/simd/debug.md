@@ -30,3 +30,5 @@ require('lazy').setup({
 - [ ] Math/LaTeX snippets.
 - [ ] Smart folding of header sections.
 - [ ] Word count.
+
+Bold, italic, strikethrough

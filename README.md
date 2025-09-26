@@ -22,7 +22,6 @@ require('lazy').setup({
 - [x] Toggle different headers (H1, H2, H3, H4, H5, H6).
 - [ ] Toggle bold, italic and strikethrough text.
 - [ ] Add inline code and code blocks.
-- [ ] Create ordered and unordered lists.
 - [ ] Blockquotes.
 - [ ] Links and images.
 - [ ] Horizontal rules.
