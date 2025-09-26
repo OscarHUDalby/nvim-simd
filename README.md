@@ -3,8 +3,7 @@
 A simple Markdown plugin for Neovim. Includes quick previews and a suite of functions for editing Markdown files.
 
 ![Neovim 0.9+](https://img.shields.io/badge/Neovim-0.9%2B-%2300AF5B.svg?logo=neovim&logoColor=white)
-![Version]([https://img.shields.io/github/v/release/OscarHUDalby/nvim-simd](https://img.shields.io/github/v/tag/OscarHUDalby/nvim-simd
-))
+![Version](https://img.shields.io/github/v/tag/OscarHUDalby/nvim-simd)
 
 ## Installation
 
