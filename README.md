@@ -30,7 +30,7 @@ Working towards covering all features described in [Mastering Markdown](https://
 - [x] Add inline code and code blocks.
 - [x] Blockquotes.
 - [ ] Links and images.
-- [ ] Horizontal rules.
+- [x] Horizontal rules.
 - [ ] Table helpers.
 - [ ] Math/LaTeX snippets.
 - [ ] Smart folding of header sections.
