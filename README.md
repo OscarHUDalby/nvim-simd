@@ -25,7 +25,7 @@ return {
 - [x] Quickly add/toggle Tick/Cross marks in checklists.
 - [x] Toggle different headers (H1, H2, H3, H4, H5, H6).
 - [x] Toggle bold, italic and strikethrough text.
-- [ ] Add inline code and code blocks.
+- [x] Add inline code and code blocks.
 - [ ] Blockquotes.
 - [ ] Links and images.
 - [ ] Horizontal rules.

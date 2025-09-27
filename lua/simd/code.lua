@@ -64,7 +64,8 @@ return function(M)
     end
   end
 
-  vim.cmd [[
-    xnoremap <silent> <leader>nc :<C-u>lua require'simd'.wrap_code(vim.fn.visualmode())<CR>
-  ]]
+  -- Keybindings
+  local prefix = "<leader>" .. M.config.namespace_key .. "c"
+  local mapping = "xnoremap <silent> " .. prefix .. " :<C-u>lua require'simd'.wrap_code(vim.fn.visualmode())<CR>"
+  vim.cmd(mapping)
 end

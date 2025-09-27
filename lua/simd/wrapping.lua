@@ -124,20 +124,23 @@ return function(M)
     end
   end
 
-  -- Italic, Bold, Bold Italic, Strikethrough
-  vim.keymap.set('v', '<leader>ni', function() M.make_formatted({ "*", "_" }, "*", true) end, { desc = "Toggle italic" })
-  vim.keymap.set('v', '<leader>nb', function() M.make_formatted({ "**", "__" }, "**", true) end, { desc = "Toggle bold" })
-  vim.keymap.set('v', '<leader>no',
+  -- Keybindings
+  local prefix = "<leader>" .. M.config.namespace_key
+  vim.keymap.set('v', prefix .. 'i', function() M.make_formatted({ "*", "_" }, "*", true) end, { desc = "Toggle italic" })
+  vim.keymap.set('v', prefix .. 'b', function() M.make_formatted({ "**", "__" }, "**", true) end,
+    { desc = "Toggle bold" })
+  vim.keymap.set('v', prefix .. 'o',
     function() M.make_formatted({ "***", "___", "**_" }, "***", true) end,
     { desc = "Toggle bold+italic" })
-  vim.keymap.set('v', '<leader>ns', function() M.make_formatted({ "~~" }, "~~", true) end,
+  vim.keymap.set('v', prefix .. 's', function() M.make_formatted({ "~~" }, "~~", true) end,
     { desc = "Toggle strikethrough (~~)" })
 
-  vim.keymap.set('n', '<leader>ni', function() M.make_formatted({ "*", "_" }, "*", false) end, { desc = "Toggle italic" })
-  vim.keymap.set('n', '<leader>nb', function() M.make_formatted({ "**", "__" }, "**", false) end,
+  vim.keymap.set('n', prefix .. 'i', function() M.make_formatted({ "*", "_" }, "*", false) end,
+    { desc = "Toggle italic" })
+  vim.keymap.set('n', prefix .. 'b', function() M.make_formatted({ "**", "__" }, "**", false) end,
     { desc = "Toggle bold" })
-  vim.keymap.set('n', '<leader>no', function() M.make_formatted({ "***", "___", "**_" }, "***", false) end,
+  vim.keymap.set('n', prefix .. 'o', function() M.make_formatted({ "***", "___", "**_" }, "***", false) end,
     { desc = "Toggle bold+italic" })
-  vim.keymap.set('n', '<leader>ns', function() M.make_formatted({ "~~" }, "~~", false) end,
+  vim.keymap.set('n', prefix .. 's', function() M.make_formatted({ "~~" }, "~~", false) end,
     { desc = "Toggle strikethrough (~~)" })
 end

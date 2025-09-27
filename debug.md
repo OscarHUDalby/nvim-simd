@@ -8,12 +8,12 @@ A simple Markdown plugin for Neovim. Includes quick previews and a suite of func
 ## Installation
 
 Use your favorite plugin manager to install `nvim-simd`. For example, using `Lazy.nvim`:
-`hello italic`
+hello italic
 hello bold
 
-hello bold italic
+    hello bold italic
 
-hello strikethrough
+    hello strikethrough
 
 ```lua
 require('lazy').setup({

@@ -16,6 +16,7 @@ return function(M)
   end
 
   -- Keybindings
-  vim.keymap.set('n', '<leader>np', function() M.preview_glow(true) end,
+  local prefix = "<leader>" .. M.config.namespace_key
+  vim.keymap.set('n', prefix .. 'p', function() M.preview_glow(true) end,
     { desc = "Preview markdown with glow in hsplit" })
 end
