@@ -14,6 +14,7 @@ require("simd.previews")(M)
 require("simd.headers")(M)
 require("simd.checkboxes")(M)
 require("simd.blockquotes")(M)
+require("simd.rules")(M)
 
 
 return M

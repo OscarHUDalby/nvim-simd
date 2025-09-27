@@ -29,13 +29,5 @@ require('lazy').setup({
 - [x] Toggle bold, italic and strikethrough on lines.
 - [x] Toggle bold, italic and strikethrough on selections.
 - [x] Add inline code and code blocks.
-- [ ] Create ordered and unordered lists.
-- [ ] Blockquotes.
-- [ ] Links and images.
-- [ ] Horizontal rules.
-- [ ] Table helpers.
-- [ ] Math/LaTeX snippets.
-- [ ] Smart folding of header sections.
-- [ ] Word count.
 
-Bold, italic, strikethrough
+hello world
