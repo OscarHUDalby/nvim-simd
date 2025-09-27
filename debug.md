@@ -8,6 +8,10 @@ A simple Markdown plugin for Neovim. Includes quick previews and a suite of func
 ## Installation
 
 Use your favorite plugin manager to install `nvim-simd`. For example, using `Lazy.nvim`:
+hello italic
+hello bold
+hello bold italic
+hello strikethrough
 
 ```lua
 require('lazy').setup({
@@ -20,8 +24,10 @@ require('lazy').setup({
 - [x] Quick preview of Markdown files in a split.
 - [x] Quickly add/toggle Tick/Cross marks in checklists.
 - [x] Toggle different headers (H1, H2, H3, H4, H5, H6).
-- [x] Toggle bold, italic and strikethrough text.
+- [x] Toggle bold, italic and strikethrough on lines.
+- [ ] Toggle bold, italic and strikethrough on selections.
 - [ ] Add inline code and code blocks.
+- [ ] Create ordered and unordered lists.
 - [ ] Blockquotes.
 - [ ] Links and images.
 - [ ] Horizontal rules.
@@ -29,3 +35,9 @@ require('lazy').setup({
 - [ ] Math/LaTeX snippets.
 - [ ] Smart folding of header sections.
 - [ ] Word count.
+
+Bold, italic, strikethrough
+
+```
+
+```
