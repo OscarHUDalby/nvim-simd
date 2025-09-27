@@ -11,9 +11,7 @@ Use your favorite plugin manager to install `nvim-simd`. For example, using `Laz
 `hello italic`
 hello bold
 
-```lang
 hello bold italic
-```
 
 hello strikethrough
 
