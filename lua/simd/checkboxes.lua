@@ -11,6 +11,7 @@ return function(M)
     vim.api.nvim_set_current_line(line)
   end
 
-  -- Checkboxes
-  vim.keymap.set('n', '<leader>nc', M.toggle_checkbox, { desc = "Toggle markdown checkbox in line" })
+  -- Keybindings
+  local prefix = "<leader>" .. M.config.namespace_key
+  vim.keymap.set('n', prefix .. "x", M.toggle_checkbox, { desc = "Toggle markdown checkbox in line" })
 end
