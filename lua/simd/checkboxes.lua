@@ -12,5 +12,5 @@ return function(M)
   end
 
   -- Checkboxes
-  vim.keymap.set('n', '<leader>nc', M.toggle_checkbox, { desc = "Toggle markdown checkbox in line" })
+  vim.keymap.set('n', '<leader>nx', M.toggle_checkbox, { desc = "Toggle markdown checkbox in line" })
 end
