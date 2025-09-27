@@ -10,9 +10,13 @@ A simple Markdown plugin for Neovim. Includes quick previews and a suite of func
 Use your favorite plugin manager to install `nvim-simd`. For example, using `Lazy.nvim`:
 
 ```lua
-require('lazy').setup({
-    'OscarHUDalby/nvim-simd',
-})
+return {
+  "OscarHUDalby/nvim-simd",
+  version = "*",
+  config = function()
+    require("simd").setup({})
+  end,
+}
 ```
 
 ## Features
