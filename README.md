@@ -32,6 +32,6 @@ Working towards covering all features described in [Mastering Markdown](https://
 - [ ] Links and images.
 - [x] Horizontal rules.
 - [ ] Table helpers.
-- [ ] Math/LaTeX snippets.
+- [x] Math/LaTeX snippets.
 - [ ] Smart folding of header sections.
 - [ ] Word count.

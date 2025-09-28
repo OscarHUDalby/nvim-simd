@@ -1,5 +1,5 @@
 return function(M)
-  function M.wrap_code(mode, inline_opening, inline_closing, block_opening, block_closing)
+  function M.wrap_math(mode, inline_opening, inline_closing, block_opening, block_closing)
     if mode ~= "v" and mode ~= "V" then
       return
     end
@@ -31,8 +31,8 @@ return function(M)
   end
 
   -- Keybindings
-  local prefix = "<leader>" .. M.config.namespace_key .. "c"
+  local prefix = "<leader>" .. M.config.namespace_key .. "m"
   local mapping = "xnoremap <silent> " ..
-      prefix .. " :<C-u>lua require'simd'.wrap_code(vim.fn.visualmode(), '`', '`', '```', '```')<CR>"
+      prefix .. " :<C-u>lua require'simd'.wrap_math(vim.fn.visualmode(), '$', '$', '$$', '$$')<CR>"
   vim.cmd(mapping)
 end

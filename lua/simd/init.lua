@@ -8,8 +8,10 @@ function M.setup(opts)
   M.config.namespace_key = opts and opts.namespace_key or "n"
 end
 
-require("simd.wrapping")(M)
+require("simd.wrapping_utils")(M)
+require("simd.text_formatting")(M)
 require("simd.code")(M)
+require("simd.math")(M)
 require("simd.previews")(M)
 require("simd.headers")(M)
 require("simd.checkboxes")(M)
