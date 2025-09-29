@@ -21,6 +21,8 @@ return {
 
 ## Features
 
+Working towards covering all features described in [Mastering Markdown](https://www.markdownguide.org/basic-syntax/).
+
 - [x] Quick preview of Markdown files in a split.
 - [x] Quickly add/toggle Tick/Cross marks in checklists.
 - [x] Toggle different headers (H1, H2, H3, H4, H5, H6).
@@ -28,8 +30,8 @@ return {
 - [x] Add inline code and code blocks.
 - [x] Blockquotes.
 - [ ] Links and images.
-- [ ] Horizontal rules.
+- [x] Horizontal rules.
 - [ ] Table helpers.
-- [ ] Math/LaTeX snippets.
+- [x] Math/LaTeX snippets.
 - [ ] Smart folding of header sections.
 - [ ] Word count.
