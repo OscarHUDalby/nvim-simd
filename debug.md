@@ -22,11 +22,10 @@ require('lazy').setup({
 a,b,c
 d,e,f
 g,h,i
-
-| Column 1 | Column 2 | Column 3 |
-| -------- | -------- | -------- |
-| Value 1  | Value 2  | Value 3  |
-| Value A  | Value B  | Value C  |
+| a | b | c |
+| --- | --- | --- |
+| d | e | f |
+| g | h | i |
 
 ## Features
 

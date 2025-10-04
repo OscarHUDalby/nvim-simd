@@ -1,10 +1,10 @@
 return function(M)
-  function M.parse_headers(header_line)
-    local headers = vim.split(header_line, ",", { trimempty = true })
-    for i, v in ipairs(headers) do
-      headers[i] = vim.trim(v)
+  function M.parse_line(line)
+    local row = vim.split(line, ",", { trimempty = true })
+    for i, v in ipairs(row) do
+      row[i] = vim.trim(v)
     end
-    return headers
+    return row
   end
 
   function M.create_n_length_string_of(char, n)
@@ -15,11 +15,11 @@ return function(M)
     opts = opts or {}
     local below = opts.below ~= false -- default: below
     local header_line = opts.headers or "Col1, Col2, Col3"
-    local rows = opts.rows            -- should be based on header_line
-    local width = opts.width or 4
-    local width_chars = M.create_n_length_string_of("-", width)
-    local headers = M.parse_headers(header_line)
+    local rows = opts.rows
+    local width_chars = M.create_n_length_string_of("-", opts.width or 3)
+    local headers = M.parse_line(header_line)
     local cols = #headers
+
 
     local tbl = {}
     -- Header
@@ -28,9 +28,7 @@ return function(M)
     table.insert(tbl, "|" .. string.rep(" " .. width_chars .. " |", cols))
     -- Rows
     for i = 1, #rows do
-      local row = rows[i]
-      -- Now you can use the contents of `row`
-      -- For example, print each cell if row is a table:
+      local row = M.parse_line(rows[i])
       local line = "|"
       for j = 1, cols do
         local cell = row[j] or ""
@@ -49,9 +47,7 @@ return function(M)
     local visual_selection = M.get_visual_selection()
     if not visual_selection or #visual_selection == 0 then return end
     local first_line = table.remove(visual_selection, 1)
-    M.logger.window(first_line, { x_offset = 100 })
-    M.logger.window(rows)
-    -- M.add_table({ below = true, rows = rows, headers = first_line })
+    M.add_table({ below = true, rows = visual_selection, headers = first_line })
   end
 
   local prefix = "<leader>" .. M.config.namespace_key
