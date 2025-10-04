@@ -30,11 +30,12 @@ require("simd.code")(M)
 require("simd.links")(M)
 require("simd.images")(M)
 require("simd.math")(M)
-require("simd.previews")(M)
 require("simd.headers")(M)
 require("simd.checkboxes")(M)
 require("simd.blockquotes")(M)
 require("simd.rules")(M)
+require("simd.tables")(M)
+require("simd.previews")(M)
 
 
 return M

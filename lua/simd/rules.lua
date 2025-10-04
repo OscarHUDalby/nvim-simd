@@ -1,4 +1,3 @@
--- rules
 return function(M)
   function M.add_rule(dir)
     local pos = vim.api.nvim_win_get_cursor(0)
