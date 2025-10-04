@@ -64,7 +64,14 @@ return function(M)
     end
   end
 
-  function M.wrap_by_mode(mode, inline_opening, inline_closing, block_opening, block_closing)
+  function M.wrap_by_mode(mode, opts)
+    opts                 = opts or {}
+    local allow_inline   = opts.allow_inline == nil and true or opts.allow_inline
+    local inline_opening = opts.inline_opening or ""
+    local inline_closing = opts.inline_closing or ""
+    local allow_block    = opts.allow_block == nil and true or opts.allow_block
+    local block_opening  = opts.block_opening or ""
+    local block_closing  = opts.block_closing or ""
     if mode ~= "v" and mode ~= "V" then
       return
     end
@@ -77,6 +84,7 @@ return function(M)
     local lines = vim.api.nvim_buf_get_lines(0, start_pos[2] - 1, end_pos[2], false)
 
     if mode == "v" then
+      if allow_inline == false then return end
       if #lines == 1 then
         local line = lines[1]
         local sel_start = start_pos[3]
@@ -91,6 +99,7 @@ return function(M)
         M.wrap_block(block_opening, block_closing)
       end
     elseif mode == "V" then
+      if allow_block == false then return end
       M.wrap_block(block_opening, block_closing)
     end
   end

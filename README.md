@@ -29,7 +29,7 @@ Working towards covering all features described in [Mastering Markdown](https://
 - [x] Toggle bold, italic and strikethrough text.
 - [x] Add inline code and code blocks.
 - [x] Blockquotes.
-- [ ] Links and images.
+- [x] Links and images.
 - [x] Horizontal rules.
 - [ ] Table helpers.
 - [x] Math/LaTeX snippets.
